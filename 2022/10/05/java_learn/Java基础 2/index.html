@@ -16,12 +16,12 @@
   <meta name="author" content="Sean">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Java基础 2七、面向对象(中级)Visual Studio Code的使用 使用Vscode开发一个项目test_pro01，创建一个类MyTools，编写一个方法，可以完成对int数组的冒泡排序的功能  12345678910111213141516171819202122232425262728public class test_pro01 &amp;#123;    public static">
+    <meta name="description" content="本章记录面向对象、枚举与注解相关内容，以及一个房屋出租系统的小项目">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java基础 2">
-<meta property="og:url" content="https://s1.gitee.io/2022/10/05/java-learn/Java%E5%9F%BA%E7%A1%80%202/index.html">
+<meta property="og:title" content="Java基础 第二章">
+<meta property="og:url" content="https://s1.gitee.io/2022/10/05/java_learn/Java%E5%9F%BA%E7%A1%80%202/index.html">
 <meta property="og:site_name" content="灵感集市">
-<meta property="og:description" content="Java基础 2七、面向对象(中级)Visual Studio Code的使用 使用Vscode开发一个项目test_pro01，创建一个类MyTools，编写一个方法，可以完成对int数组的冒泡排序的功能  12345678910111213141516171819202122232425262728public class test_pro01 &amp;#123;    public static">
+<meta property="og:description" content="本章记录面向对象、枚举与注解相关内容，以及一个房屋出租系统的小项目">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-04-28-22-16.png">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-04-28-23-54.png">
@@ -30,14 +30,15 @@
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-05-02-14-31.png">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-05-02-16-03.png">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-05-03-12-18.png">
+<meta property="og:image" content="https://s1.gitee.io/img/diagrams/%E6%88%BF%E5%B1%8B%E5%87%BA%E7%A7%9F%E7%A8%8B%E5%BA%8F%E6%A1%86%E6%9E%B6%E5%9B%BE.svg">
 <meta property="og:image" content="https://s1.gitee.io/img/diagrams/%E7%B1%BB%E5%8F%98%E9%87%8F%E7%9A%84%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.svg">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-05-08-17-10.png">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-05-08-17-21.png">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-05-08-17-50.png">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-05-12-20-04.png">
 <meta property="og:image" content="https://s1.gitee.io/img/mk-2022-05-12-23-04.png">
-<meta property="article:published_time" content="2022-10-04T18:00:00.000Z">
-<meta property="article:modified_time" content="2022-10-05T02:34:01.340Z">
+<meta property="article:published_time" content="2022-10-05T02:02:00.000Z">
+<meta property="article:modified_time" content="2022-10-05T03:09:57.767Z">
 <meta property="article:author" content="Sean">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="学习">
@@ -47,7 +48,7 @@
   
   
   
-  <title>Java基础 2 - 灵感集市</title>
+  <title>Java基础 第二章 - 灵感集市</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -252,7 +253,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Java基础 2"></span>
+            <span id="subtitle" data-typed-text="Java基础 第二章"></span>
           
         </div>
 
@@ -263,8 +264,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-05 02:00" pubdate>
-          2022年10月5日 凌晨
+        <time datetime="2022-10-05 10:02" pubdate>
+          2022年10月5日 上午
         </time>
       </span>
     
@@ -276,7 +277,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          77k 字
+          76k 字
         
       </span>
     
@@ -288,7 +289,7 @@
         
         
           <!-- compatible with older versions-->
-          639 分钟
+          636 分钟
         
       </span>
     
@@ -326,12 +327,17 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Java基础 2</h1>
+            <h1 style="display: none">Java基础 第二章</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Java基础-2"><a href="#Java基础-2" class="headerlink" title="Java基础 2"></a>Java基础 2</h1><h2 id="七、面向对象-中级"><a href="#七、面向对象-中级" class="headerlink" title="七、面向对象(中级)"></a>七、面向对象(中级)</h2><h3 id="Visual-Studio-Code的使用"><a href="#Visual-Studio-Code的使用" class="headerlink" title="Visual Studio Code的使用"></a>Visual Studio Code的使用</h3><ol>
+                <blockquote>
+<p>本章记录面向对象、枚举与注解相关内容，以及一个房屋出租系统的小项目</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="Java-基础-第二章"><a href="#Java-基础-第二章" class="headerlink" title="Java 基础 第二章"></a>Java 基础 第二章</h1><h2 id="七、面向对象-中级"><a href="#七、面向对象-中级" class="headerlink" title="七、面向对象(中级)"></a>七、面向对象(中级)</h2><h3 id="Visual-Studio-Code的使用"><a href="#Visual-Studio-Code的使用" class="headerlink" title="Visual Studio Code的使用"></a>Visual Studio Code的使用</h3><ol>
 <li><p>使用Vscode开发一个项目<code>test_pro01</code>，创建一个类<code>MyTools</code>，编写一个方法，可以完成对<code>int</code>数组的冒泡排序的功能</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">test_pro01</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">MyTools</span> <span class="hljs-variable">myTools</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MyTools</span>();<br>        <span class="hljs-type">int</span>[] arr = &#123; <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span> &#125;; <span class="hljs-comment">// 在sort中引用arr会直接影响到主方法的arr</span><br>        myTools.sort(arr); <span class="hljs-comment">// 排序</span><br><br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; arr.length; i++) &#123; <span class="hljs-comment">// 输出arr</span><br>            System.out.print(arr[i] + <span class="hljs-string">&quot; &quot;</span>);<br>        &#125;<br>    &#125;<br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyTools</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span>[] sort(<span class="hljs-type">int</span>[] arr) &#123;<br>        <span class="hljs-comment">// 冒泡排序</span><br>        <span class="hljs-type">int</span> <span class="hljs-variable">temp</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; arr.length - <span class="hljs-number">1</span>; i++) &#123; <span class="hljs-comment">// 外层循环</span><br>            <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">j</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; j &lt; arr.length - <span class="hljs-number">1</span> - i; j++) &#123; <span class="hljs-comment">// 内层循环</span><br>                <span class="hljs-keyword">if</span> (arr[j] &gt; arr[j + <span class="hljs-number">1</span>]) &#123; <span class="hljs-comment">// 交换</span><br>                    temp = arr[j];<br>                    arr[j] = arr[j + <span class="hljs-number">1</span>];<br>                    arr[j + <span class="hljs-number">1</span>] = temp;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> arr;<br>    &#125;<br>&#125;    <br></code></pre></td></tr></table></figure>
 </li>
@@ -1097,8 +1103,93 @@
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs java">-------------------房屋列表-------------------<br>编号    房主    电话    地址    月租    状态(未出租/已出租)<br><span class="hljs-number">2</span>       none   <span class="hljs-number">116</span>     昌平区   <span class="hljs-number">5000</span>    已出租<br><span class="hljs-number">3</span>       mary   <span class="hljs-number">111</span>     海淀区   <span class="hljs-number">9000</span>    未出租<br>-------------------房屋列表完成-------------------<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>退出</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><code class="hljs java">    请选择(<span class="hljs-number">1</span>-<span class="hljs-number">6</span>)：<span class="hljs-number">6</span><br>    请输入你的选择(Y/N)：<br>    t<br>    选择错误，请重新输入：y<br>    你退出了程序~~<br>    ````<br><br>### 房屋出租系统项目设计<br><br><span class="hljs-number">1.</span> 程序框架图<br>    <span class="hljs-number">1.</span> **分层模式** -&gt; 当软件比较复杂时，需要模式管理<br>    <span class="hljs-number">2.</span> 模式管理特点：**程序结构清晰**，扩展性/可读性**增强**<br>    <span class="hljs-number">3.</span> 分层模式框架图的要求<br>         <span class="hljs-number">1.</span> 系统有哪些类（文件）<br>         <span class="hljs-number">2.</span> 明确类与类的调用关系<br>![房屋出租程序框架图](img/diagrams/房屋出租程序框架图.svg)<br><br>### 房屋出租系统项目实现<br><br>&gt; 具体代码在`MyJava\src\com\houserent`包内<br><br><span class="hljs-number">1.</span> 准备工具类`Utility`，提高开发效率<br>在实际开发中，公司都会提供相应的工具类和开发库，可以提高开发效率，程序员也需要能看懂别人写的代码，并能够正确的调用<br>    <span class="hljs-number">1.</span> 手动导入第三方`Utility`类，了解`Utility`类的使用<br>    <span class="hljs-number">2.</span> 测试`Utility`类<br><br><span class="hljs-number">2.</span> 完成`House`类<br>    编号    房主    电话    地址    月租    状态(未出租/已出租)<br><br><span class="hljs-number">3.</span> 完成显示主菜单和退出软件功能<br>    - 说明：实现功能的**三部曲** 【明确功能 -&gt; 思路分析 -&gt; 代码实现】<br>    - 功能说明：用户打开软件，可以看到主菜单，可以退出软件<br>    - 思路分析：<br>      - 在`HouseView.java`中，编写一个方法`mainMenu()`，显示菜单<br><br><span class="hljs-number">4.</span> 完成显示房屋列表的功能<br>    - 功能说明：显示房屋列表<br>    - 思路分析：在`HouseView.java`中编写`listHouses()`，显示房屋列表界面。在`HouseService.java`中编写一个方法`list()`，返回所有的房屋信息<br><br><span class="hljs-number">5.</span> 完成添加房屋信息功能<br>    - 功能说明：添加房屋功能<br>    - 思路分析： 在`HouseView.java`编写`addHouse()`作为界面，接收用户输入。在`HouseService.java`编写方法`add(House <span class="hljs-keyword">new</span> <span class="hljs-title class_">House</span>)`，把新的`House`对象加入到`houses`数组，返回`<span class="hljs-type">boolean</span>`，房屋id为系统分配，用户不可更改<br><br><span class="hljs-number">6.</span> 完成删除房屋功能<br>    - 在`HouseView.java`编写`delHouse()`作为界面，接收用户id。在`HouseService.java`编写方法`del(<span class="hljs-type">int</span> delId)`，完成真正的删除任务，返回`<span class="hljs-type">boolean</span>`<br><span class="hljs-number">7.</span> 完成查找房屋功能<br>    - 在`HouseView.java`编写findHouse()作为界面，接收输入id。在`HouseService.java`编写方法`findById(<span class="hljs-type">int</span> findId)`，返回`House`对象，如果没有，返回`<span class="hljs-literal">null</span>`<br><span class="hljs-number">8.</span> 完成修改房屋功能<br>    - 在`HouseView.java`编写`updateHouse()`作为界面，接收输入。调用`findById()`方法查找是否存在该`id`<br><br>## 九、面向对象(高级)<br><br>### 类变量和类方法<br><br>#### 类变量-提出问题<br><br>- 有一群小孩在玩堆雪人，不时有新的小孩加入，请问如何知道现在共有多<br>少人在玩？，编写程序解决。<br>  - 传统方法解决<br>    - 思路：<br>      <span class="hljs-number">1.</span> 在main方法中定义一个变量`count`<br>      <span class="hljs-number">2.</span> 当小孩加入游戏后`count++`，最后count就记录有多少小孩玩游戏<br>  - 传统方法带来的问题<br>    <span class="hljs-number">1.</span> count是一个独立于对象的变量<br>    <span class="hljs-number">2.</span> 以后访问count很麻烦，没有使用到OOP<br>    <span class="hljs-number">3.</span> 因此，我们引出【类变量/静态变量】<br><br>#### 类变量-快速入门<br><br>- 思考：如果，设计一个`<span class="hljs-type">int</span> count`表示总人数，我们在创建一个小孩时，就把`count`加<span class="hljs-number">1</span>，并且`count`是所有对象共享的。在下面的代码示例中，我们使用类变量来解决<br><br>    ```java<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ChildGame</span> &#123;<br>        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>            <span class="hljs-type">Child</span> <span class="hljs-variable">child1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">&quot;小明&quot;</span>);<br>            child1.join();<br>            child1.count++;<br><br>            <span class="hljs-type">Child</span> <span class="hljs-variable">child2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">&quot;小红&quot;</span>);<br>            child2.join();<br>            child2.count++;<br><br>            <span class="hljs-type">Child</span> <span class="hljs-variable">child3</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">&quot;小刚&quot;</span>);<br>            child3.join();<br>            child3.count++;<br><br>            <span class="hljs-comment">// 类变量，可以通过类名来访问</span><br>            System.out.println(<span class="hljs-string">&quot;共有&quot;</span> + Child.count + <span class="hljs-string">&quot;名小孩加入了游戏..&quot;</span>);<br>        &#125;<br>    &#125;<br><br>    <span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> &#123;<br>        <span class="hljs-keyword">private</span> String name;<br><br>        <span class="hljs-comment">// 定义一个类变量count，也叫静态(static)变量</span><br>        <span class="hljs-comment">// 该变量最大的特点就是会被Chile类所有的对象实例共享</span><br>        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-type">int</span> <span class="hljs-variable">count</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br><br>        <span class="hljs-keyword">public</span> <span class="hljs-title function_">Child</span><span class="hljs-params">(String name)</span> &#123;<br>            <span class="hljs-built_in">this</span>.name = name;<br>        &#125;<br><br>        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">join</span><span class="hljs-params">()</span> &#123;<br>            System.out.println(name + <span class="hljs-string">&quot; 加入了游戏..&quot;</span>);<br>        &#125;<br>    &#125;<br></code></pre></td></tr></table></figure></li>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs java">请选择(<span class="hljs-number">1</span>-<span class="hljs-number">6</span>)：<span class="hljs-number">6</span><br>请输入你的选择(Y/N)：<br>t<br>选择错误，请重新输入：y<br>你退出了程序~~<br></code></pre></td></tr></table></figure></li>
 </ol>
+<h3 id="房屋出租系统项目设计"><a href="#房屋出租系统项目设计" class="headerlink" title="房屋出租系统项目设计"></a>房屋出租系统项目设计</h3><ol>
+<li>程序框架图<ol>
+<li><strong>分层模式</strong> -&gt; 当软件比较复杂时，需要模式管理</li>
+<li>模式管理特点：<strong>程序结构清晰</strong>，扩展性&#x2F;可读性<strong>增强</strong></li>
+<li>分层模式框架图的要求<ol>
+<li>系统有哪些类（文件）</li>
+<li>明确类与类的调用关系<br><img src="/img/diagrams/%E6%88%BF%E5%B1%8B%E5%87%BA%E7%A7%9F%E7%A8%8B%E5%BA%8F%E6%A1%86%E6%9E%B6%E5%9B%BE.svg" srcset="/img/loading.gif" lazyload alt="房屋出租程序框架图"></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="房屋出租系统项目实现"><a href="#房屋出租系统项目实现" class="headerlink" title="房屋出租系统项目实现"></a>房屋出租系统项目实现</h3><blockquote>
+<p>具体代码在<code>MyJava\src\com\houserent</code>包内</p>
+</blockquote>
+<ol>
+<li><p>准备工具类<code>Utility</code>，提高开发效率<br>在实际开发中，公司都会提供相应的工具类和开发库，可以提高开发效率，程序员也需要能看懂别人写的代码，并能够正确的调用</p>
+<ol>
+<li>手动导入第三方<code>Utility</code>类，了解<code>Utility</code>类的使用</li>
+<li>测试<code>Utility</code>类</li>
+</ol>
+</li>
+<li><p>完成<code>House</code>类<br> 编号    房主    电话    地址    月租    状态(未出租&#x2F;已出租)</p>
+</li>
+<li><p>完成显示主菜单和退出软件功能</p>
+<ul>
+<li>说明：实现功能的<strong>三部曲</strong> 【明确功能 -&gt; 思路分析 -&gt; 代码实现】</li>
+<li>功能说明：用户打开软件，可以看到主菜单，可以退出软件</li>
+<li>思路分析：<ul>
+<li>在<code>HouseView.java</code>中，编写一个方法<code>mainMenu()</code>，显示菜单</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>完成显示房屋列表的功能</p>
+<ul>
+<li>功能说明：显示房屋列表</li>
+<li>思路分析：在<code>HouseView.java</code>中编写<code>listHouses()</code>，显示房屋列表界面。在<code>HouseService.java</code>中编写一个方法<code>list()</code>，返回所有的房屋信息</li>
+</ul>
+</li>
+<li><p>完成添加房屋信息功能</p>
+<ul>
+<li>功能说明：添加房屋功能</li>
+<li>思路分析： 在<code>HouseView.java</code>编写<code>addHouse()</code>作为界面，接收用户输入。在<code>HouseService.java</code>编写方法<code>add(House new House)</code>，把新的<code>House</code>对象加入到<code>houses</code>数组，返回<code>boolean</code>，房屋id为系统分配，用户不可更改</li>
+</ul>
+</li>
+<li><p>完成删除房屋功能</p>
+<ul>
+<li>在<code>HouseView.java</code>编写<code>delHouse()</code>作为界面，接收用户id。在<code>HouseService.java</code>编写方法<code>del(int delId)</code>，完成真正的删除任务，返回<code>boolean</code></li>
+</ul>
+</li>
+<li><p>完成查找房屋功能</p>
+<ul>
+<li>在<code>HouseView.java</code>编写findHouse()作为界面，接收输入id。在<code>HouseService.java</code>编写方法<code>findById(int findId)</code>，返回<code>House</code>对象，如果没有，返回<code>null</code></li>
+</ul>
+</li>
+<li><p>完成修改房屋功能</p>
+<ul>
+<li>在<code>HouseView.java</code>编写<code>updateHouse()</code>作为界面，接收输入。调用<code>findById()</code>方法查找是否存在该<code>id</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="九、面向对象-高级"><a href="#九、面向对象-高级" class="headerlink" title="九、面向对象(高级)"></a>九、面向对象(高级)</h2><h3 id="类变量和类方法"><a href="#类变量和类方法" class="headerlink" title="类变量和类方法"></a>类变量和类方法</h3><h4 id="类变量-提出问题"><a href="#类变量-提出问题" class="headerlink" title="类变量-提出问题"></a>类变量-提出问题</h4><ul>
+<li>有一群小孩在玩堆雪人，不时有新的小孩加入，请问如何知道现在共有多<br>少人在玩？，编写程序解决。<ul>
+<li>传统方法解决<ul>
+<li>思路：<ol>
+<li>在main方法中定义一个变量<code>count</code></li>
+<li>当小孩加入游戏后<code>count++</code>，最后count就记录有多少小孩玩游戏</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>传统方法带来的问题<ol>
+<li>count是一个独立于对象的变量</li>
+<li>以后访问count很麻烦，没有使用到OOP</li>
+<li>因此，我们引出【类变量&#x2F;静态变量】</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="类变量-快速入门"><a href="#类变量-快速入门" class="headerlink" title="类变量-快速入门"></a>类变量-快速入门</h4><ul>
+<li><p>思考：如果，设计一个<code>int count</code>表示总人数，我们在创建一个小孩时，就把<code>count</code>加1，并且<code>count</code>是所有对象共享的。在下面的代码示例中，我们使用类变量来解决</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ChildGame</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">Child</span> <span class="hljs-variable">child1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">&quot;小明&quot;</span>);<br>        child1.join();<br>        child1.count++;<br><br>        <span class="hljs-type">Child</span> <span class="hljs-variable">child2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">&quot;小红&quot;</span>);<br>        child2.join();<br>        child2.count++;<br><br>        <span class="hljs-type">Child</span> <span class="hljs-variable">child3</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">&quot;小刚&quot;</span>);<br>        child3.join();<br>        child3.count++;<br><br>        <span class="hljs-comment">// 类变量，可以通过类名来访问</span><br>        System.out.println(<span class="hljs-string">&quot;共有&quot;</span> + Child.count + <span class="hljs-string">&quot;名小孩加入了游戏..&quot;</span>);<br>    &#125;<br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> &#123;<br>    <span class="hljs-keyword">private</span> String name;<br><br>    <span class="hljs-comment">// 定义一个类变量count，也叫静态(static)变量</span><br>    <span class="hljs-comment">// 该变量最大的特点就是会被Chile类所有的对象实例共享</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-type">int</span> <span class="hljs-variable">count</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Child</span><span class="hljs-params">(String name)</span> &#123;<br>        <span class="hljs-built_in">this</span>.name = name;<br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">join</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(name + <span class="hljs-string">&quot; 加入了游戏..&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+</ul>
 <h4 id="类变量的内存布局"><a href="#类变量的内存布局" class="headerlink" title="类变量的内存布局"></a>类变量的内存布局</h4><p><img src="/img/diagrams/%E7%B1%BB%E5%8F%98%E9%87%8F%E7%9A%84%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.svg" srcset="/img/loading.gif" lazyload alt="类变量的内存布局"></p>
 <ul>
 <li>总结：<ul>
@@ -1983,9 +2074,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/05/java-learn/Java%E5%9F%BA%E7%A1%80%203/" title="Java基础 3">
+                      <a href="/2022/10/05/java_learn/Java%E5%9F%BA%E7%A1%80%203/" title="Java基础 第三章">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Java基础 3</span>
+                        <span class="hidden-mobile">Java基础 第三章</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -1993,8 +2084,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/05/java-learn/Java%E5%9F%BA%E7%A1%80%204/" title="Java基础 4">
-                        <span class="hidden-mobile">Java基础 4</span>
+                      <a href="/2022/10/01/java_learn/Java%E5%9F%BA%E7%A1%80%201/" title="Java基础 第一章">
+                        <span class="hidden-mobile">Java基础 第一章</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
