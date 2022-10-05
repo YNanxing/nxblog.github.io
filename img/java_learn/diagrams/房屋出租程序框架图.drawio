@@ -1,0 +1,96 @@
+<mxfile host="65bd71144e">
+    <diagram id="_iiYJQUSEZiMs7lpHhTG" name="第 1 页">
+        <mxGraphModel dx="1835" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="22" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#FF8000;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="210" y="120" as="sourcePoint"/>
+                        <mxPoint x="210" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="&lt;font style=&quot;font-size: 14px&quot;&gt;代码分析&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=default;fontColor=#00994D;" parent="22" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0713" relative="1" as="geometry">
+                        <mxPoint y="-29" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="房屋租赁程序框架图（分层模式）&lt;br style=&quot;font-size: 15px;&quot;&gt;1. 系统有哪些类（文件）&lt;br style=&quot;font-size: 15px;&quot;&gt;2. 明确类与类的调用关系" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontColor=#000000;fontFamily=Verdana;strokeWidth=2;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="174" y="10" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontFamily=Verdana;fontSize=15;fontColor=#000000;strokeWidth=3;strokeColor=#FFFF00;" parent="1" source="5" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="html=1;entryX=-0.015;entryY=0.404;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;strokeColor=#FFFF00;" parent="1" source="5" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="代码实现分析" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="15" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5384" relative="1" as="geometry">
+                        <mxPoint x="25" y="-4" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="HouseView.java 【界面层】&lt;br style=&quot;font-size: 15px&quot;&gt;1. 显示界面&lt;br style=&quot;font-size: 15px&quot;&gt;2. 接收用户的输入&lt;br style=&quot;font-size: 15px&quot;&gt;3. 调用其他类完成对房屋信息的各种操作" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontFamily=Verdana;strokeWidth=2;fillColor=#b1ddf0;strokeColor=#10739e;fontColor=#000000;spacing=2;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="120" width="320" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontFamily=Verdana;fontSize=15;fontColor=#000000;strokeWidth=3;strokeColor=#FFFF00;" parent="1" source="6" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="HouseServise.java 【业务层】&lt;br&gt;// 定义一个House[]，保存House对象&lt;br style=&quot;font-size: 15px&quot;&gt;1. 响应HouseView的调用&lt;br style=&quot;font-size: 15px&quot;&gt;2. 完成对房屋信息的各种操作（增删改查&lt;br&gt;c[create]r[read]u[update]d[delete]）" style="rounded=0;html=1;align=left;fontFamily=Verdana;strokeWidth=2;fillColor=#d0cee2;strokeColor=#56517e;spacing=2;fontColor=#000000;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="230" width="320" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="House.java 【数据层】(domain/model)&lt;br style=&quot;font-size: 16px&quot;&gt;1. 一个House对象表示一个房屋信息&lt;br&gt;2. House类有哪些属性，可以通过给出的&lt;br&gt;界面分析得到" style="rounded=0;html=1;align=left;fontFamily=Verdana;strokeWidth=2;fillColor=#6d8764;strokeColor=#3A5431;spacing=2;fontColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="360" width="320" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontFamily=Verdana;fontSize=15;fontColor=#000000;curved=1;strokeWidth=3;strokeColor=#FFFF00;" parent="1" source="8" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="250" y="165"/>
+                            <mxPoint x="250" y="140"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="HouseRentApp.java&lt;br&gt;main() { // 程序入口&lt;br&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;// 创建HouseView对象&lt;br&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;// 调用该对象，显示主菜单&lt;br&gt;}" style="rounded=0;html=1;align=left;fontFamily=Verdana;strokeWidth=2;fillColor=#647687;strokeColor=#314354;spacing=2;fontColor=#ffffff;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="-76" y="120" width="250" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="工具类-Utility.java&lt;br&gt;完成获取用户各种输入" style="rounded=0;html=1;align=left;fontFamily=Verdana;strokeWidth=2;fillColor=#d0cee2;strokeColor=#56517e;spacing=2;fontColor=#000000;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="-76" y="250" width="250" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="1. 编写mainMenu()方法，可以显示主菜单&lt;br&gt;2. 编写listHouses() // 房屋列表界面&lt;br&gt;3. 编写addHouse() // 界面，接收用户输入&lt;br&gt;4. 编写delHouse() // 界面，接收用户id&lt;br&gt;5. 编写findHouse() 界面，接收输入id&lt;br&gt;6. 编写updateHouse() // 界面，接收输入，调用findById方法查找是否存在该id" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontFamily=Verdana;strokeWidth=2;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;spacing=2;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="100" width="320" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="代码实现分析" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontFamily=Verdana;strokeWidth=2;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;spacing=2;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="760" y="40" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="1. 编写一个方法list() //返回所有的房屋信息&lt;br&gt;2. 编写方法add(House new House)，把新的House对象加入到houses数组，返回boolean&lt;br&gt;3. 编写方法del(int delld)，完成真正的删除任务，返回boolean&lt;br&gt;4. 编写方法findById(int findId)，返回House对象，如果没有，返回null" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontFamily=Verdana;strokeWidth=2;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;spacing=2;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="260" width="320" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="html=1;dashed=1;exitX=1.004;exitY=0.598;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.002;entryY=0.199;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FFFF00;" parent="1" source="6" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="600" y="304.5" as="sourcePoint"/>
+                        <mxPoint x="710" y="300" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="代码实现分析" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="19" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5384" relative="1" as="geometry">
+                        <mxPoint x="25" y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="各司其职" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;fontFamily=Verdana;strokeWidth=2;fontSize=27;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="10" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;strokeColor=#FF8000;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="260" y="410" as="sourcePoint"/>
+                        <mxPoint x="260" y="110" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="代码实现" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontColor=#00994D;" parent="24" vertex="1" connectable="0">
+                    <mxGeometry x="0.3564" y="4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

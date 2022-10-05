@@ -1,0 +1,130 @@
+<mxfile host="65bd71144e">
+    <diagram id="WsRNzCMMPwnKKnP7Qic5" name="第 1 页">
+        <mxGraphModel dx="2228" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="40" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;pre style=&quot;font-size: 13px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;JVM内存&lt;br&gt;&lt;/font&gt;类变量的内存布局&lt;/b&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/blockquote&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;horizontal=1;" vertex="1" parent="1">
+                    <mxGeometry x="540.42" y="70" width="869.58" height="580" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;h2&gt;栈&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#0F0F0F;fontColor=#ffffff;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="130" width="250" height="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="main栈" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#543B27;fillColor=#B266FF;verticalAlign=top;align=left;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="582.5" y="218.5" width="227.5" height="171.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Child child1 = new Child();&lt;br&gt;child1&amp;nbsp; -&amp;gt;&amp;nbsp; [0x11]" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#543B27;fillColor=#B266FF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="251.5" width="210" height="48.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;h2&gt;堆&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#0F0F0F;fontColor=#ffffff;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="832.5" y="130" width="550" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Child对象 [0x11]" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#006EAF;fillColor=#1ba1e2;verticalAlign=top;align=left;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="161.5" width="170" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;h2 style=&quot;font-size: 18px;&quot;&gt;方法区&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#0F0F0F;fontColor=#ffffff;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="832.5" y="410" width="560" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="常量池" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#2D7600;fillColor=#60a917;verticalAlign=top;align=center;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="837.5" y="460" width="170" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="小明 : 0x22" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#543B27;fillColor=#B266FF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="506.5" width="145" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="name : 0x22" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#BD7000;fillColor=#f0a30a;align=left;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="862.5" y="200" width="145" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="name :&amp;nbsp; 0x44" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#3700CC;fillColor=#6a00ff;align=left;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="273" width="145" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;fontColor=#FFFFFF;strokeWidth=3;fillColor=#f0a30a;strokeColor=#BD7000;" edge="1" parent="1" target="49">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1040" y="214"/>
+                            <mxPoint x="1040" y="520"/>
+                        </Array>
+                        <mxPoint x="1000" y="214" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="&lt;div style=&quot;color: rgb(171 , 178 , 191) ; background-color: rgb(40 , 44 , 52) ; font-family: &amp;#34;cn regular&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace , &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-weight: normal ; font-size: 18px ; line-height: 24px&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;public&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;ChildGame&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;public&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;static&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;main&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;[] &lt;/span&gt;&lt;span style=&quot;color: #e06c75 ; font-style: italic&quot;&gt;args&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;Child&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;child1&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;Child&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #98c379&quot;&gt;&quot;小明&quot;&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;child1&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;join&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;child1&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;count&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;++;&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;Child&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;child2&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;Child&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #98c379&quot;&gt;&quot;小红&quot;&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;child2&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;join&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;child2&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;count&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;++;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #7f848e ; font-style: italic&quot;&gt;// 类变量，可以通过类名来访问&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;System&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;out&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;println&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #98c379&quot;&gt;&quot;共有&quot;&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;Child&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;count&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #98c379&quot;&gt;&quot;名小孩加入了游戏..&quot;&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;Child&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;private&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #7f848e ; font-style: italic&quot;&gt;// 定义一个类变量count，也叫静态(static)变量&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #7f848e ; font-style: italic&quot;&gt;// 该变量最大的特点就是会被Chile类所有的对象实例共享&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;public&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;static&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;count&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d19a66&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;public&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;Child&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75 ; font-style: italic&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;this&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75 ; font-style: italic&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;public&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;join&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;()&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b&quot;&gt;System&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;out&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef&quot;&gt;println&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #e06c75&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #98c379&quot;&gt;&quot; 加入了游戏..&quot;&lt;/span&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="60" width="580" height="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="Child child2 = new Child();&lt;br&gt;child2&amp;nbsp; -&amp;gt;&amp;nbsp; [0x11]" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#543B27;fillColor=#B266FF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="318.5" width="210" height="48.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="Child对象 [0x33]" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#006EAF;fillColor=#1ba1e2;verticalAlign=top;align=left;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="260" width="170" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="name : 0x44" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#BD7000;fillColor=#f0a30a;align=left;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="862.5" y="291.5" width="145" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="小红 : 0x44" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#543B27;fillColor=#B266FF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="550" width="145" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;curved=1;strokeWidth=3;strokeColor=#FFFF00;" edge="1" parent="1" source="43" target="45">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;curved=1;strokeWidth=3;strokeColor=#FFFF00;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="80" target="82">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="810" y="285.7647058823529" as="sourcePoint"/>
+                        <mxPoint x="860" y="194" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="810" y="343"/>
+                            <mxPoint x="810" y="282"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="62" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;fontColor=#FFFFFF;strokeWidth=3;fillColor=#6a00ff;strokeColor=#3700CC;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="83" target="84">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1050" y="305"/>
+                            <mxPoint x="1050" y="564"/>
+                        </Array>
+                        <mxPoint x="820" y="563.4999999999998" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="87" value="Class对象(JDK8+)&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#432D57;fillColor=#76608a;verticalAlign=top;align=left;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1090" y="228.5" width="170" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="静态变量 count" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#BD7000;fillColor=#f0a30a;align=left;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1102.5" y="264.5" width="145" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1.001;exitY=0.884;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF6666;strokeWidth=3;exitPerimeter=0;" edge="1" parent="1" source="45" target="90">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1020" y="250"/>
+                            <mxPoint x="1080" y="250"/>
+                            <mxPoint x="1080" y="264"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF6666;strokeWidth=3;" edge="1" parent="1" source="82">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1030.1699999999996" y="251.05999999999995" as="sourcePoint"/>
+                        <mxPoint x="1112.5" y="288" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="类信息加载" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#C73500;fillColor=#fa6800;verticalAlign=top;align=center;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1192.5" y="456.5" width="170" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#FF6666;strokeWidth=3;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="93" target="87">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1370" y="482"/>
+                            <mxPoint x="1370" y="251"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="95" value="静态域(JKD8-)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#432D57;fillColor=#76608a;verticalAlign=top;align=center;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1062.5" y="527.75" width="170" height="71.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="静态变量 count" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#BD7000;fillColor=#f0a30a;align=left;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1075" y="560" width="145" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="总结：&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;1. 在JDK8之前，通常认为静态变量在静态域&lt;br&gt;2. 在JDK8之后，通常认为静态变量加载在堆中的Class对象&lt;br&gt;&lt;/font&gt;&lt;b style=&quot;font-size: 16px&quot;&gt;3. 静态变量被对象共享&lt;br&gt;4. 因此无论静态变量在哪里加载都不影响使用&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=15;strokeColor=#543B27;fillColor=#B266FF;verticalAlign=top;align=left;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="581.25" y="420" width="227.5" height="171.5" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -23,34 +23,31 @@
 <meta property="og:site_name" content="灵感集市">
 <meta property="og:description" content="本章记录 Java 异常、常用类、集合、泛型的基础应用">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://nxblog.github.io/img/diagrams/%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB%E5%9B%BE.svg">
-<meta property="og:image" content="https://nxblog.github.io/img/diagrams/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E7%A4%BA%E6%84%8F%E5%9B%BE.svg">
-<meta property="og:image" content="https://nxblog.github.io/2022/10/05/java_learn/Java%E5%9F%BA%E7%A1%80%203/img/mk-2022-05-15-12-26.png">
-<meta property="og:image" content="https://nxblog.github.io/2022/10/05/java_learn/Java%E5%9F%BA%E7%A1%80%203/img/mk-2022-05-15-12-24.png">
-<meta property="og:image" content="https://nxblog.github.io/2022/10/05/java_learn/Java%E5%9F%BA%E7%A1%80%203/img/mk-2022-05-15-12-25.png">
-<meta property="og:image" content="https://nxblog.github.io/img/diagrams/String%E7%B1%BB.svg">
-<meta property="og:image" content="https://nxblog.github.io/img/diagrams/String%E7%9A%84%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.svg">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-05-15-22-15.png">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-05-15-23-54.png">
-<meta property="og:image" content="https://nxblog.github.io/img/diagrams/StringBuffer%E7%B1%BB.svg">
-<meta property="og:image" content="https://nxblog.github.io/img/diagrams/StringBuilder%E7%B1%BB.svg">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-05-26-15-27.png">
-<meta property="og:image" content="https://nxblog.github.io/img/diagrams/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E4%BD%93%E7%B3%BB%E5%9B%BE.svg">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-05-31-17-09.png">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-06-01-17-58.png">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-06-04-16-01.png">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-06-09-16-33.png">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-06-06-10-40.png">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-06-06-21-09.png">
-<meta property="og:image" content="https://nxblog.github.io/img/mk-2022-06-09-15-56.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/diagrams/%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB%E5%9B%BE.svg">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/diagrams/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E7%A4%BA%E6%84%8F%E5%9B%BE.svg">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/diagrams/String%E7%B1%BB.svg">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/diagrams/String%E7%9A%84%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.svg">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-05-15-22-15.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-05-15-23-54.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/diagrams/StringBuffer%E7%B1%BB.svg">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/diagrams/StringBuilder%E7%B1%BB.svg">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-05-26-15-27.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/diagrams/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E4%BD%93%E7%B3%BB%E5%9B%BE.svg">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-05-31-17-09.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-06-01-17-58.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-06-04-16-01.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-06-09-16-33.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-06-06-10-40.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-06-06-21-09.png">
+<meta property="og:image" content="https://nxblog.github.io/img/java_learn/mk-2022-06-09-15-56.png">
 <meta property="article:published_time" content="2022-10-05T02:03:00.000Z">
-<meta property="article:modified_time" content="2022-10-05T03:13:13.180Z">
+<meta property="article:modified_time" content="2022-10-05T03:53:49.266Z">
 <meta property="article:author" content="Sean">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://nxblog.github.io/img/diagrams/%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB%E5%9B%BE.svg">
+<meta name="twitter:image" content="https://nxblog.github.io/img/java_learn/diagrams/%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB%E5%9B%BE.svg">
   
   
   
@@ -295,7 +292,7 @@
         
         
           <!-- compatible with older versions-->
-          757 分钟
+          760 分钟
         
       </span>
     
@@ -355,7 +352,7 @@
 </ol>
 </li>
 </ul>
-<h3 id="异常体系图（重点）"><a href="#异常体系图（重点）" class="headerlink" title="异常体系图（重点）"></a>异常体系图（重点）</h3><h4 id="异常体系图（简化版）"><a href="#异常体系图（简化版）" class="headerlink" title="异常体系图（简化版）"></a>异常体系图（简化版）</h4><p><img src="/img/diagrams/%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB%E5%9B%BE.svg" srcset="/img/loading.gif" lazyload alt="异常体系图（简化版）"></p>
+<h3 id="异常体系图（重点）"><a href="#异常体系图（重点）" class="headerlink" title="异常体系图（重点）"></a>异常体系图（重点）</h3><h4 id="异常体系图（简化版）"><a href="#异常体系图（简化版）" class="headerlink" title="异常体系图（简化版）"></a>异常体系图（简化版）</h4><p><img src="/img/java_learn/diagrams/%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB%E5%9B%BE.svg" srcset="/img/loading.gif" lazyload alt="异常体系图（简化版）"></p>
 <h4 id="异常体系图小结"><a href="#异常体系图小结" class="headerlink" title="异常体系图小结"></a>异常体系图小结</h4><ol>
 <li>异常分为两大类，「运行时异常」和「编译时异常」</li>
 <li>「运行时异常」，编译器无法检测，<strong>不要求强制处置</strong>的异常。一般是指编程时的逻辑错误，是程序员应该避免其出现的异常。<code>java.lang.RuntimeException</code> 类及它的子类都是「运行时异常」</li>
@@ -424,7 +421,7 @@
 <li><code>throws</code>: 将发生的异常抛出，交给调用者来处理，最顶级的处理者就是 JVM</li>
 </ol>
 <ul>
-<li>异常处理示意图<br><img src="/img/diagrams/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E7%A4%BA%E6%84%8F%E5%9B%BE.svg" srcset="/img/loading.gif" lazyload alt="异常处理示意图"></li>
+<li>异常处理示意图<br><img src="/img/java_learn/diagrams/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E7%A4%BA%E6%84%8F%E5%9B%BE.svg" srcset="/img/loading.gif" lazyload alt="异常处理示意图"></li>
 </ul>
 <h4 id="try-catch-异常处理"><a href="#try-catch-异常处理" class="headerlink" title="try-catch 异常处理"></a>try-catch 异常处理</h4><ol>
 <li><p>try-catch 基本介绍<br> Java 提供 <code>try</code> 和 <code>catch</code> 块来处理异常。<code>try</code> 块用于包含坑出错的代码。<code>catch</code> 块用于处理 <code>try</code> 块中发生的异常。可以根据需要在程序中有多个数量的 <code>try-catch</code> 块</p>
@@ -615,13 +612,13 @@
 </tr>
 </tbody></table>
 <ul>
-<li>Boolean类图<img src="img/mk-2022-05-15-12-26.png" srcset="/img/loading.gif" lazyload alt = "Boolean类图" width=60% /></li>
-<li>Character类图<img src="img/mk-2022-05-15-12-24.png" srcset="/img/loading.gif" lazyload alt = "Character类图" width=60% /></li>
-<li>其他类图<img src="img/mk-2022-05-15-12-25.png" srcset="/img/loading.gif" lazyload alt = "其他类图" width=60% /></li>
+<li>Boolean类图<br>&lt;img&#x2F;java_learn src&#x3D;”img&#x2F;java_learn&#x2F;mk-2022-05-15-12-26.png” alt &#x3D; “Boolean类图” width&#x3D;60% &#x2F;&gt;</li>
+<li>Character类图<br>&lt;img&#x2F;java_learn src&#x3D;”img&#x2F;java_learn&#x2F;mk-2022-05-15-12-24.png” alt &#x3D; “Character类图” width&#x3D;60% &#x2F;&gt;</li>
+<li>其他类图<br>&lt;img&#x2F;java_learn src&#x3D;”img&#x2F;java_learn&#x2F;mk-2022-05-15-12-25.png” alt &#x3D; “其他类图” width&#x3D;60% &#x2F;&gt;</li>
 </ul>
-<!-- ![Boolean类图](img/mk-2022-05-15-12-26.png)
-![Character类图](img/mk-2022-05-15-12-24.png)
-![类图](img/mk-2022-05-15-12-25.png) -->
+<!-- ![Boolean类图](img/java_learn/mk-2022-05-15-12-26.png)
+![Character类图](img/java_learn/mk-2022-05-15-12-24.png)
+![类图](img/java_learn/mk-2022-05-15-12-25.png) -->
 
 <h4 id="包装类的转换"><a href="#包装类的转换" class="headerlink" title="包装类的转换"></a>包装类的转换</h4><ol>
 <li>JDK5 前使用手动装箱和拆箱<ul>
@@ -686,7 +683,7 @@
 <li><code>value</code> 是 <code>final</code> 类型，不可以修改（指 <code>value</code> 不能指向新的地址，但单个字符内容可以变化）</li>
 </ol>
 <ul>
-<li><p>String 类继承关系图<br><img src="/img/diagrams/String%E7%B1%BB.svg" srcset="/img/loading.gif" lazyload alt="String类继承关系图"></p>
+<li><p>String 类继承关系图<br><img src="/img/java_learn/diagrams/String%E7%B1%BB.svg" srcset="/img/loading.gif" lazyload alt="String类继承关系图"></p>
 </li>
 <li><p>intern() 方法介绍</p>
 <ul>
@@ -708,7 +705,7 @@
 <li>方式二：先在堆中创建空间，里面维护了 <code>value[]</code> 属性，指向常量池的 <code>&quot;abc&quot;</code> 空间。如果常量池没有 <code>&quot;abc&quot;</code>，重新创建；如果有，直接通过 <code>value[]</code> 指向。变量 <code>s2</code> 最终指向的是堆中的空间地址。</li>
 </ol>
 </li>
-<li><p>两种方式的内存分布图<br><img src="/img/diagrams/String%E7%9A%84%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.svg" srcset="/img/loading.gif" lazyload alt="String的内存布局"></p>
+<li><p>两种方式的内存分布图<br><img src="/img/java_learn/diagrams/String%E7%9A%84%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.svg" srcset="/img/loading.gif" lazyload alt="String的内存布局"></p>
 </li>
 </ul>
 <h4 id="String-类练习题"><a href="#String-类练习题" class="headerlink" title="String 类练习题"></a>String 类练习题</h4><ol>
@@ -733,7 +730,7 @@
 <li><p>第 1 题：以下语句创建了几个对象？画出内存布局图</p>
   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">String</span> <span class="hljs-variable">s1</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;hello&quot;</span>;<br>s1 = <span class="hljs-string">&quot;hahah&quot;</span>;<br><span class="hljs-comment">// 创建了 2 个对象</span><br></code></pre></td></tr></table></figure>
 
-<p>  <img src="/img/mk-2022-05-15-22-15.png" srcset="/img/loading.gif" lazyload alt="第1题内存布局图"></p>
+<p>  <img src="/img/java_learn/mk-2022-05-15-22-15.png" srcset="/img/loading.gif" lazyload alt="第1题内存布局图"></p>
 </li>
 <li><p>第 2 题：以下语句创建了几个对象？</p>
   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">String</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Hello&quot;</span> + <span class="hljs-string">&quot;World&quot;</span>;<br><span class="hljs-comment">// 创建了 2 个对象</span><br><span class="hljs-comment">// 编译器会优化</span><br><span class="hljs-comment">// 等价于 String a = &quot;HelloWorld&quot;;</span><br></code></pre></td></tr></table></figure>
@@ -750,7 +747,7 @@
 <li><p>第 6 题：以下语句输出什么内容？画出内存分析图（难点）</p>
   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> &#123;<br>    <span class="hljs-type">String</span> <span class="hljs-variable">str</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">String</span>(<span class="hljs-string">&quot;hel&quot;</span>);<br>    <span class="hljs-keyword">final</span> <span class="hljs-type">char</span>[] ch = &#123;<span class="hljs-string">&#x27;j&#x27;</span>, <span class="hljs-string">&#x27;a&#x27;</span>, <span class="hljs-string">&#x27;v&#x27;</span>, <span class="hljs-string">&#x27;a&#x27;</span>&#125;;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">change</span><span class="hljs-params">(String str, <span class="hljs-type">char</span> ch[])</span> &#123;<br>        str = <span class="hljs-string">&quot;java&quot;</span>;<br>        ch[<span class="hljs-number">0</span>] = <span class="hljs-string">&#x27;h&#x27;</span>;<br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">Test</span> <span class="hljs-variable">ex</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Test</span>();<br>        ex.change(ex.str, ex.ch);<br>        System.out.print(ex.str + <span class="hljs-string">&quot; and &quot;</span>); <span class="hljs-comment">// hel and</span><br>        System.out.println(ex.ch); <span class="hljs-comment">// hava</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>  <img src="/img/mk-2022-05-15-23-54.png" srcset="/img/loading.gif" lazyload alt="第6题内存分析"></p>
+<p>  <img src="/img/java_learn/mk-2022-05-15-23-54.png" srcset="/img/loading.gif" lazyload alt="第6题内存分析"></p>
 </li>
 </ul>
 <h4 id="String-类常用方法"><a href="#String-类常用方法" class="headerlink" title="String 类常用方法"></a>String 类常用方法</h4><ul>
@@ -784,7 +781,7 @@
 <li><code>StringBuffer</code> 是一个容器</li>
 </ul>
 <p>StringBuffer 类图</p>
-<p><img src="/img/diagrams/StringBuffer%E7%B1%BB.svg" srcset="/img/loading.gif" lazyload alt="StringBuffer类图"></p>
+<p><img src="/img/java_learn/diagrams/StringBuffer%E7%B1%BB.svg" srcset="/img/loading.gif" lazyload alt="StringBuffer类图"></p>
 <ul>
 <li><p>StringBuffer 类解读：</p>
 <ol>
@@ -835,7 +832,7 @@
 <li>在 <code>StringBuilder</code> 上的主要操作是 <code>append()</code> 和 <code>insert()</code> 方法，可重载这些方法，以接受任意类型的数据</li>
 </ol>
 <p>StringBuilder 类图</p>
-<p><img src="/img/diagrams/StringBuilder%E7%B1%BB.svg" srcset="/img/loading.gif" lazyload alt="StringBuilder类图"></p>
+<p><img src="/img/java_learn/diagrams/StringBuilder%E7%B1%BB.svg" srcset="/img/loading.gif" lazyload alt="StringBuilder类图"></p>
 <ul>
 <li>StringBuilder 类解读：<ol>
 <li><code>StringBuilder</code> 和 <code>StringBuffer</code> 均可带边可变的字符序列，方法是一样的</li>
@@ -1031,7 +1028,7 @@
 <ol>
 <li>将字符串中指定部分进行反转。比如将 <code>&quot;abcdef&quot;</code> 反转为 <code>&quot;aedcbf&quot;</code></li>
 <li>编写方法 <code>public static String reverse(String str, int start, int end)</code> 完成</li>
-<li>分析图<br> <img src="/img/mk-2022-05-26-15-27.png" srcset="/img/loading.gif" lazyload alt="分析图"></li>
+<li>分析图<br> <img src="/img/java_learn/mk-2022-05-26-15-27.png" srcset="/img/loading.gif" lazyload alt="分析图"></li>
 </ol>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/**</span><br><span class="hljs-comment">* 将字符串中指定部分进行反转</span><br><span class="hljs-comment">*/</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Homework01</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">str</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;abcdef&quot;</span>;<br>        System.out.println(<span class="hljs-string">&quot;交换前：&quot;</span> + str);<br>        <span class="hljs-keyword">try</span> &#123;<br>            str = reverse(str, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>);<br>            System.out.println(<span class="hljs-string">&quot;交换后：&quot;</span> + str);<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            System.out.println(e.getMessage());<br>        &#125;<br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title function_">reverse</span><span class="hljs-params">(String str, <span class="hljs-type">int</span> start, <span class="hljs-type">int</span> end)</span> &#123;<br>        <span class="hljs-comment">// 对输入的参数做一个验证</span><br>        <span class="hljs-comment">// 重要技巧！！</span><br>        <span class="hljs-comment">// 1. 写出正确的情况</span><br>        <span class="hljs-comment">// 2. 取反即可</span><br>        <span class="hljs-keyword">if</span> (!(str != <span class="hljs-literal">null</span> &amp;&amp; start &gt;= <span class="hljs-number">0</span> &amp;&amp; end &gt; start &amp;&amp; end &lt; str.length())) &#123;<br>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(<span class="hljs-string">&quot;参数不正确&quot;</span>);<br>        &#125;<br><br>        <span class="hljs-type">char</span>[] chars = str.toCharArray();<br>        <span class="hljs-type">char</span> <span class="hljs-variable">temp</span> <span class="hljs-operator">=</span> <span class="hljs-string">&#x27; &#x27;</span>; <span class="hljs-comment">// 交换辅助变量</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> start, j = end; i &lt; j; i++, j--) &#123;<br>            temp = chars[i];<br>            chars[i] = chars[j];<br>            chars[j] = temp;<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">String</span>(chars);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 </li>
@@ -1069,7 +1066,7 @@
 <li>提供了一系列方便的操作对象的方法：<code>add(), remove(), set(), get()</code>等</li>
 <li>使用集合添加、删除新元素比较简洁</li>
 </ol>
-<h3 id="集合框架体系图（重点）"><a href="#集合框架体系图（重点）" class="headerlink" title="集合框架体系图（重点）"></a>集合框架体系图（重点）</h3><p><img src="/img/diagrams/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E4%BD%93%E7%B3%BB%E5%9B%BE.svg" srcset="/img/loading.gif" lazyload alt="集合框架体系图"></p>
+<h3 id="集合框架体系图（重点）"><a href="#集合框架体系图（重点）" class="headerlink" title="集合框架体系图（重点）"></a>集合框架体系图（重点）</h3><p><img src="/img/java_learn/diagrams/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E4%BD%93%E7%B3%BB%E5%9B%BE.svg" srcset="/img/loading.gif" lazyload alt="集合框架体系图"></p>
 <h3 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h3><ol>
 <li><p>Collection 接口实现类的特点</p>
 <p> <code>public interface Collection&lt;E&gt; extends Iterable&lt;E&gt;</code></p>
@@ -1100,7 +1097,7 @@
 <ol>
 <li><code>Iterator</code> 对象称为迭代器，主要用于遍历 <code>Collection</code> 集合中的元素</li>
 <li>所有实现了 <code>Collection</code> 接口的集合类都有一个 <code>iterator()</code> 方法，用以返回一个实现了 <code>Iterator</code> 接口的对象，即可返回一个迭代器</li>
-<li><code>Iterator</code> 的结构图示<br> <img src="/img/mk-2022-05-31-17-09.png" srcset="/img/loading.gif" lazyload alt="迭代器的执行原理"></li>
+<li><code>Iterator</code> 的结构图示<br> <img src="/img/java_learn/mk-2022-05-31-17-09.png" srcset="/img/loading.gif" lazyload alt="迭代器的执行原理"></li>
 <li><code>Iterator</code> 仅用于遍历集合，本身并不存放对象</li>
 <li><code>Iterator</code> 接口的方法<ul>
 <li><code>hasNext()</code>: 判断是否还有下一个元素，返回 <code>boolean</code></li>
@@ -1227,7 +1224,7 @@
 <li><code>LinkedList</code> 中维护了两个属性 <code>first</code> 和 <code>last</code> 分别指向<strong>首节点</strong>和<strong>尾节点</strong></li>
 <li>每个节点（<code>Node</code> 对象），里面又维护了 <code>prev 、next、item</code> 三个属性，其中通过 <code>prev</code> 指向前一个，通过 <code>next</code> 指向后一个节点。最终实现<strong>双向链表</strong></li>
 <li>所以 <code>LinkedList</code> 的元素的<strong>添加和删除</strong>，不是通过数组完成的，相对来说<strong>效率较高</strong></li>
-<li>双向链表示意图<br> <img src="/img/mk-2022-06-01-17-58.png" srcset="/img/loading.gif" lazyload alt="双向链表示意图"></li>
+<li>双向链表示意图<br> <img src="/img/java_learn/mk-2022-06-01-17-58.png" srcset="/img/loading.gif" lazyload alt="双向链表示意图"></li>
 </ol>
 <p>ArrayList 和 LinkedList 的比较</p>
 <table>
@@ -1300,7 +1297,7 @@
 </ol>
 <p>HashSet 底层机制</p>
 <ul>
-<li><p>模拟简单的数组 + 链表结构<br>  <img src="/img/mk-2022-06-04-16-01.png" srcset="/img/loading.gif" lazyload alt="模拟数组链表结构"></p>
+<li><p>模拟简单的数组 + 链表结构<br>  <img src="/img/java_learn/mk-2022-06-04-16-01.png" srcset="/img/loading.gif" lazyload alt="模拟数组链表结构"></p>
   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/*</span><br><span class="hljs-comment"> * 模拟 HashSet(HashMap) 的底层结构</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HashSetStructure</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-comment">// 1. 创建一个数组，数组的类型为 Node</span><br>        <span class="hljs-comment">// 有些人把 Node[] 数组称为 表</span><br>        Node[] table = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>[<span class="hljs-number">16</span>];<br><br>        <span class="hljs-type">Node</span> <span class="hljs-variable">john</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>(<span class="hljs-string">&quot;john&quot;</span>);<br>        table[<span class="hljs-number">2</span>] = john;<br>        <span class="hljs-type">Node</span> <span class="hljs-variable">jack</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>(<span class="hljs-string">&quot;jack&quot;</span>);<br>        john.next = jack; <span class="hljs-comment">// 将 jack 挂载到 john</span><br>        <span class="hljs-type">Node</span> <span class="hljs-variable">rose</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>(<span class="hljs-string">&quot;rose&quot;</span>);<br>        jack.next = rose; <span class="hljs-comment">// 将 rose 挂载到 jack</span><br><br>        <span class="hljs-type">Node</span> <span class="hljs-variable">lucy</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>(<span class="hljs-string">&quot;lucy&quot;</span>);<br>        table[<span class="hljs-number">3</span>] = lucy;<br><br>        System.out.println(table);<br>    &#125;<br>&#125;<br><br><span class="hljs-comment">// 结点，存储数据，可以指向下一个结点，从而形成链表</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Node</span> &#123;<br>    Object item; <span class="hljs-comment">// 存放数据</span><br>    Node next; <span class="hljs-comment">// 指向下一个结点</span><br><br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Node</span><span class="hljs-params">(Object item)</span> &#123;<br>        <span class="hljs-built_in">this</span>.item = item;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>HashSet 添加元素机制 (<code>hash() + equals()</code>)</p>
@@ -1368,7 +1365,7 @@
 </li>
 <li><p>这样的话，我们遍历 <code>LinkedHashSet</code> 也能确保插入顺序和遍历顺序一致</p>
 </li>
-<li><p>LinkedHashSet 底层机制图<br> <img src="/img/mk-2022-06-09-16-33.png" srcset="/img/loading.gif" lazyload alt="LinkedHashSet 底层机制图"></p>
+<li><p>LinkedHashSet 底层机制图<br> <img src="/img/java_learn/mk-2022-06-09-16-33.png" srcset="/img/loading.gif" lazyload alt="LinkedHashSet 底层机制图"></p>
 </li>
 </ol>
 </li>
@@ -1396,7 +1393,7 @@
 <li><code>Map</code> 的 <code>key</code> 可以为 <code>null</code>，<code>value</code> 也可以为 <code>null</code>。注意 <code>key</code> 为 <code>null</code> 只能有一个，<code>value</code> 为 <code>null</code>，可以有多个</li>
 <li>常用 <code>String</code> 类作为 <code>Map</code> 的 <code>key</code></li>
 <li><code>key</code> 和 <code>value</code> 之间存在单向一对一关系，即通过指定的 <code>key</code> 总能找到对应的 <code>value</code></li>
-<li><code>Map</code> 存放数据的 <code>key-value</code> 示意图，一对 <code>k-v</code> 是放在一个 <code>HashMap$Node</code> 中的，又因为 <code>Node</code> 实现了 <code>Entry</code> 接口，有些书上也说一对 <code>k-v</code> 就是一个 <code>Entry（如图）</code><br><img src="/img/mk-2022-06-06-10-40.png" srcset="/img/loading.gif" lazyload alt="key-value示意图"></li>
+<li><code>Map</code> 存放数据的 <code>key-value</code> 示意图，一对 <code>k-v</code> 是放在一个 <code>HashMap$Node</code> 中的，又因为 <code>Node</code> 实现了 <code>Entry</code> 接口，有些书上也说一对 <code>k-v</code> 就是一个 <code>Entry（如图）</code><br><img src="/img/java_learn/mk-2022-06-06-10-40.png" srcset="/img/loading.gif" lazyload alt="key-value示意图"></li>
 </ol>
 </li>
 <li><p>Map 接口常用方法</p>
@@ -1440,7 +1437,7 @@
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1fh411y7R8?p=538">底层源码机制</a></p>
 </blockquote>
 <ul>
-<li>示意图：<br>  <img src="/img/mk-2022-06-06-21-09.png" srcset="/img/loading.gif" lazyload alt="HashMap 底层机制示意图"><ol>
+<li>示意图：<br>  <img src="/img/java_learn/mk-2022-06-06-21-09.png" srcset="/img/loading.gif" lazyload alt="HashMap 底层机制示意图"><ol>
 <li><code>(k, v)</code> 是一个 <code>Node</code> 实现了 <code>Map.Entry&lt;K, V&gt;</code>，查看 <code>HashMap</code> 的源码可以看到</li>
 <li>JDK7 的 <code>HashMap</code> 底层实现：<code>数组 + 链表</code>，JDK8 的 <code>HashMap</code> 底层实现：<code>数组 + 链表 + 红黑树</code></li>
 </ol>
@@ -1672,7 +1669,7 @@
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Homework06</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">HashSet</span> <span class="hljs-variable">set</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashSet</span>();<br>        <span class="hljs-type">Person</span> <span class="hljs-variable">p1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-number">1001</span>, <span class="hljs-string">&quot;AA&quot;</span>);<br>        <span class="hljs-type">Person</span> <span class="hljs-variable">p2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-number">1002</span>, <span class="hljs-string">&quot;BB&quot;</span>);<br>        set.add(p1);<br>        set.add(p2);<br>        p1.name = <span class="hljs-string">&quot;CC&quot;</span>; <span class="hljs-comment">// hash 值未变</span><br>        set.remove(p1); <span class="hljs-comment">// 返回 false，查找 修改后的 hash 值为空，无法删除</span><br>        System.out.println(set); <span class="hljs-comment">// [&#123;id=1002, name=BB&#125;, &#123;id=1001, name=CC&#125;]</span><br>        set.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-number">1001</span>, <span class="hljs-string">&quot;CC&quot;</span>));<br>        System.out.println(set); <span class="hljs-comment">// [&#123;id=1002, name=BB&#125;, &#123;id=1001, name=CC&#125;, &#123;id=1001, name=CC&#125;]</span><br>        set.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-number">1001</span>, <span class="hljs-string">&quot;AA&quot;</span>)); <span class="hljs-comment">// 添加到 &#123;id=1001, name=&quot;CC&quot;&#125; 链表后</span><br>        System.out.println(set); <span class="hljs-comment">// [&#123;id=1002, name=BB&#125;, &#123;id=1001, name=CC&#125;, &#123;id=1001, name=CC&#125;, &#123;id=1001, name=AA&#125;]</span><br>    &#125;<br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> &#123;<br>    String name;<br>    <span class="hljs-type">int</span> id;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Person</span><span class="hljs-params">(<span class="hljs-type">int</span> id, String name)</span> &#123;<br>        <span class="hljs-built_in">this</span>.id = id;<br>        <span class="hljs-built_in">this</span>.name = name;<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">toString</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&#123;id=&quot;</span> + id + <span class="hljs-string">&quot;, name=&quot;</span> + name + <span class="hljs-string">&quot;&#125;&quot;</span>;<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">hashCode</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">final</span> <span class="hljs-type">int</span> <span class="hljs-variable">prime</span> <span class="hljs-operator">=</span> <span class="hljs-number">31</span>;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;<br>        result = prime * result + id;<br>        result = prime * result + ((name == <span class="hljs-literal">null</span>) ? <span class="hljs-number">0</span> : name.hashCode());<br>        <span class="hljs-keyword">return</span> result;<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">equals</span><span class="hljs-params">(Object obj)</span> &#123;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span> == obj)<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>        <span class="hljs-keyword">if</span> (obj == <span class="hljs-literal">null</span>)<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        <span class="hljs-keyword">if</span> (getClass() != obj.getClass())<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        <span class="hljs-type">Person</span> <span class="hljs-variable">other</span> <span class="hljs-operator">=</span> (Person) obj;<br>        <span class="hljs-keyword">if</span> (id != other.id)<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        <span class="hljs-keyword">if</span> (name == <span class="hljs-literal">null</span>) &#123;<br>            <span class="hljs-keyword">if</span> (other.name != <span class="hljs-literal">null</span>)<br>                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!name.equals(other.name))<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <ul>
-<li>分析：<br>  <img src="/img/mk-2022-06-09-15-56.png" srcset="/img/loading.gif" lazyload alt="Homework06 分析"></li>
+<li>分析：<br>  <img src="/img/java_learn/mk-2022-06-09-15-56.png" srcset="/img/loading.gif" lazyload alt="Homework06 分析"></li>
 </ul>
 </li>
 <li><p>试写出 Vector 和 ArrayList 的比较</p>
