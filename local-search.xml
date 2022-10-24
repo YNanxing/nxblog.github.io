@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Windows 11 如何使用 5G 频段热点分享网络</title>
+    <link href="/2022/10/24/windows/Windows%2011%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%205G%20%E9%A2%91%E6%AE%B5%E7%83%AD%E7%82%B9%E5%88%86%E4%BA%AB%E7%BD%91%E7%BB%9C/"/>
+    <url>/2022/10/24/windows/Windows%2011%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%205G%20%E9%A2%91%E6%AE%B5%E7%83%AD%E7%82%B9%E5%88%86%E4%BA%AB%E7%BD%91%E7%BB%9C/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Windows-11-如何使用-5G-频段热点分享网络"><a href="#Windows-11-如何使用-5G-频段热点分享网络" class="headerlink" title="Windows 11 如何使用 5G 频段热点分享网络"></a>Windows 11 如何使用 5G 频段热点分享网络</h2><p>电脑安装 Windows 11 后，发现无法开启 5 GHz 频段的移动热点，在网上摸索一段时间后，终于发现了解决方法。</p><h3 id="第一步：打开设备管理器"><a href="#第一步：打开设备管理器" class="headerlink" title="第一步：打开设备管理器"></a>第一步：打开设备管理器</h3><p>在 Windows 11 自带的搜索栏搜索「设备管理器」，并打开<br><img src="/img/windows/%E6%90%9C%E7%B4%A2%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A81.png" alt="搜索设备管理器"></p><h3 id="第二步：更改网卡设置"><a href="#第二步：更改网卡设置" class="headerlink" title="第二步：更改网卡设置"></a>第二步：更改网卡设置</h3><p>在<strong>设备管理器</strong>中打开<strong>网络适配器</strong>，双击你的 intel 网卡，在<strong>高级</strong>选项中找到 802.11a&#x2F;b&#x2F;g 无线模式，选择值为 5GHz 频段。<br><img src="/img/windows/%E8%AE%BE%E7%BD%AE%E7%BD%91%E5%8D%A1%E9%80%89%E9%A1%B9.png" alt="设置网卡选项"></p><h3 id="第三步：打开-5G-热点"><a href="#第三步：打开-5G-热点" class="headerlink" title="第三步：打开 5G 热点"></a>第三步：打开 5G 热点</h3><p>在右下角 Wifi 处单击打开快速设置，右键点击「移动热点」，单击「转入设置」打开移动热点设置页面。<br><img src="/img/windows/%E6%89%93%E5%BC%80%E7%A7%BB%E5%8A%A8%E7%83%AD%E7%82%B9%E8%AE%BE%E7%BD%AE.png" alt="打开移动热点设置"></p><p>或者直接在搜索栏搜索「移动热点」。</p><p><img src="/img/windows/%E6%90%9C%E7%B4%A2%E7%A7%BB%E5%8A%A8%E7%83%AD%E7%82%B9.png" alt="搜索移动热点"></p><p>在移动热点设置中选择 5GHz。</p><p><img src="/img/windows/%E5%9C%A8%E7%A7%BB%E5%8A%A8%E7%83%AD%E7%82%B9%E8%AE%BE%E7%BD%AE%E4%B8%AD%E9%80%89%E6%8B%A95GHz.png" alt="在移动热点设置中选择5GHz"></p><p>打开热点，完成！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>小技巧</tag>
+      
+      <tag>Windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java基础 第五章</title>
     <link href="/2022/10/05/java_learn/Java%E5%9F%BA%E7%A1%80%205/"/>
     <url>/2022/10/05/java_learn/Java%E5%9F%BA%E7%A1%80%205/</url>
